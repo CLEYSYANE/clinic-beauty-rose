@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/star_24dp_C17B8A_FILL0_wght400_GRAD0_opsz24.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+
+    <title>Beauty Rose | Clínica de Estética</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar">
+            <img src="img/Logotipo Beauty Rose Rosa Vibrante.png" alt="Logo da Beauty Rose" class="logo">
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#tratamentos">Tratamentos</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+
+            <a href="#contactos" class="btn-nav">
+                Marcações
+            </a>
+        </nav>
+    </header>
+
+    <!-- Página inicial -->
+    <main>
+        <section class="hero" id="inicio">
+
+            <div class="hero-text">
+                <p class="subtitulo">
+                    A TUA BELEZA, O TEU MOMENTO
+                </p>
+
+                <h1>
+                    Realça a tua beleza
+                    <span>natural.</span>
+                </h1>
+
+                <p class="descricao">
+                    Um espaço dedicado a ti, ao teu bem-estar
+                    e ao cuidado da tua pele. Descobre uma
+                    nova forma de cuidar de ti.
+                </p>
+
+                <a href="#tratamentos" class="btn-principal">
+                    Descobrir tratamentos
+                </a>
+            </div>
+
+            <div class="hero-imagem">
+                <img
+                    src="img/view-from-rejuvenation-beautiful-woman-enjoying-cosmetology-procedures-beauty-salon-dermatology-hands-blue-glows-healthcare-therapy-botox.jpg"
+                    alt="Momento de cuidado facial e beleza"
+                >
+            </div>
+
+        </section>
+
+        <!-- Tratamentos -->
+        <section class="tratamentos" id="tratamentos">
+            <p class="subtitulo">OS NOSSOS CUIDADOS</p>
+            <h2>Um momento só teu</h2>
+            <p>
+                Descobre os tratamentos pensados para
+                realçar a tua beleza e o teu bem-estar.
+            </p>
+            <div class="tratamentos-container">
+                <div class="tratamento">
+    
+                    <h3>Tratamento<br> Facial</h3>
+                    <p>
+                        Cuidados especializados para a tua pele,
+                        proporcionando uma aparência saudável e radiante.
+                    </p>
+                    <img
+                        src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=85"
+                        alt="Tratamento facial" class="trat-facial"
+                    >
+                </div>
+
+                <div class="tratamento">
+                    
+                    <h3>Tratamento Corporal</h3>
+                    <p>
+                        Experiências relaxantes e revitalizantes
+                        para o teu corpo, promovendo bem-estar e equilíbrio.
+                    </p>
+                    <img
+                        src="img/tratamentos-corporais.webp"
+                        alt="Tratamento Corporal" class="trat-corporal"
+                    >
+                </div>
+
+                <div class="tratamento">
+                
+                    <h3>Massagens Terapêuticas</h3>
+                    <p>
+                        Técnicas de massagem que aliviam o stress,
+                        melhoram a circulação e proporcionam relaxamento profundo.
+                    </p>
+                    <img
+                        src="img/massagem terapeutica.png"
+                        alt="Tratamento de Massagem" class="massagem"
+                    >
+                </div>
+        </section>
+
+        <!-- Sobre nós -->
+        <section id="sobre">
+            <img src="img/caroline-badran-jH05wxjmAWE-unsplash.jpg" alt="Espaco Beauty Rose" class="logo-sobre">
+            <div class="texto-sobre">
+            <h2>Sobre a Beauty Rose</h2>
+            <p>
+                Um conceito de beleza inspirado no cuidado,
+                na delicadeza e na confiança.
+            </p>
+            <p>Na Beauty Rose, acreditamos que beleza e ciência
+             andam de mãos dadas. A nossa jornada começou com uma missão
+             simples: proporcionar cuidados estéticos e dermatológicos da mais alta
+             qualidade em um ambiente acolhedor e profissional.
+
+             <p>A nossa equipa médica oferece uma gama completa de procedimentos
+                 estéticos projetados para realçar a sua beleza natural. Quer esteja à procura
+                 de tratar condições de pele ou desfrutar de tratamentos rejuvenescedores,
+                 proporcionamos soluções personalizadas às suas necessidades.
+            </div>
+        </section>
+
+        <!-- Contactos -->
+            <section class="contact" id="contactos">
+         <div class="contact-container">
+        <h3>Vamos cuidar de ti? Agende uma avaliação!</h3>
+        <form id="contato">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Nome">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" placeholder="Telefone">
+          </div>
+          <div class="form-group">
+            <label for="contato-preferencia">Preferência de contato:</label>
+            <select id="contato-preferencia">
+              <option selected disabled>Escolha uma opção</option>
+              <option value="1">WhatsApp</option>
+              <option value="2">Email</option>
+              <option value="3">Ligação</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <img src="img/Logotipo Beauty Rose Rosa Vibrante.png" alt="Logo da Beauty Rose">
+                </a>
+
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>    
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+             
+            <!-- Contactos -->
+             <div class="footer-contact">
+
+             <h3>CONTATE-NOS</h3>
+            <div class="footer-line"></div>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <span>(11) 1234-5678</span>
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Rua da Beleza, 123 - São Paulo, SP</span>
+            </p>
+
+            <p>
+                <i class="fa-regular fa-envelope"></i>
+                <span>contato@beautyrose.com</span>
+            </p>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Beauty Rose — Projeto demonstrativo de portfólio.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,598 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf9;
+    color: #4a3838;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    padding: 20px 8%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+
+.menu {
+    font-size: 16px;
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu a {
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #d88b9a;
+}
+
+.btn-nav,
+.btn-principal {
+    display: inline-block;
+    background-color: #d88b9a;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn-nav:hover,
+.btn-principal:hover {
+    background-color: #b96e7e;
+    transform: translateY(-2px);
+}
+
+/* Página inicial */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 550px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.subtitulo {
+    color: #c17b8a;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #563e43;
+}
+
+.hero h1 span {
+    color: #d88b9a;
+}
+
+.descricao {
+    color: #796b6b;
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+.hero-imagem {
+    flex: 1;
+}
+
+.hero-imagem img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 180px 180px 20px 20px;
+}
+
+/* Tratamentos */
+.tratamentos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tratamento {
+    width: 250px;
+    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.tratamentos{
+    text-align: center;
+    background-color: #f8eeed
+}
+
+
+img.trat-facial {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+img.trat-corporal {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+img.massagem {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.tratamento h3{
+    font-size: 22px;
+    color: #c17b8a;
+    margin-bottom: 10px;
+}
+
+.tratamentos h2,
+#sobre h2 {
+    font-size: 34px;
+    color: #563e43;
+    margin-bottom: 15px;
+}
+
+.tratamentos > p:last-child {
+    color: #796b6b;
+}
+
+/* Sobre nós */
+
+.logo-sobre {
+    width: 45%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.texto-sobre {
+    flex: 1;
+    min-width: 0;
+}
+
+#sobre h2,
+#sobre p {
+    margin-top: 0;
+}
+
+#sobre h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Contactos */
+.contact {
+    background-color: #f8eeed;
+}
+
+.contact-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.contact-container h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #563e43;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #e5c9ce;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #d88b9a;
+}
+
+.btn {
+    border: none;
+    background-color: #d88b9a;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #b96e7e;
+}
+
+/* Rodapé */
+.footer {
+  background-color:#d88b9a;
+  color:#fff;
+  padding: 45px 0 25px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  width: 78%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Logo e redes sociais */
+.footer-logo img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin-bottom: 45px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #c17b8a;
+  transform: scale(1.2);
+}
+
+/* Contactos*/
+
+.footer-contact {
+  color: #fff;
+}
+
+.footer-contact h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-contact p i {
+  width: 20px;
+  min-width: 20px;
+  font-size: 19px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright*/
+.footer-bottom {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px 0;
+    box-sizing: border-box;
+    text-align: center !important;
+}
+
+.footer-bottom p {
+  color: #f5dce4;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsividade do rodapé */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .footer {
+        padding: 35px 0 15px;
+    }
+
+    .footer-container {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-logo img {
+        max-width: 130px;
+        margin-bottom: 30px;
+    }
+
+    .footer-social {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .footer-contact h3 {
+        font-size: 17px;
+    }
+
+    .footer-contact p {
+        font-size: 13px;
+        gap: 10px;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-bottom {
+        padding: 20px 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
+
+/* Telemóveis */
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 0 10px;
+    }
+
+    .footer-container {
+        width: 88%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        max-width: 140px;
+        margin: 0 auto 25px;
+    }
+
+    .footer-social {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .footer-social a {
+        font-size: 22px;
+    }
+
+    .footer-contact {
+        width: 100%;
+    }
+
+    .footer-contact h3 {
+        font-size: 18px;
+    }
+
+    .footer-contact p {
+        font-size: 14px;
+        gap: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-contact p i {
+        flex-shrink: 0;
+    }
+
+    .footer-bottom {
+        padding: 20px 16px 10px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
+
+
+
+
+
+
+
+
+/* Adaptação para telemóveis */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .descricao {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-imagem img {
+        max-height: 350px;
+    }
+
+    .tratamentos h2,
+    #sobre h2 {
+        font-size: 28px;
+    }
+
+    .contact-container h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    #sobre {
+        padding: 25px 16px;
+        gap: 20px;
+    }
+
+    #sobre h2 {
+        font-size: 24px;
+    }
+
+    #sobre p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+/* Tablets e celulares */
+@media (max-width: 768px) {
+    #sobre {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 20px;
+    }
+
+    .logo-sobre {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .texto-sobre {
+        width: 100%;
+    }
+
+    #sobre h2 {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+
+    #sobre p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+}
